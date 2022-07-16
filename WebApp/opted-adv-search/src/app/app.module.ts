@@ -1,19 +1,13 @@
+import { AgGridModule } from '@ag-grid-community/angular';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { RetryInterceptor } from './utilities/Interceptor/RetryInterceptor';
-import { TokenInterceptor } from './utilities/Interceptor/TokenInterceptor';
-import { SpinnerInterceptor } from './utilities/Interceptor/SpinnerInterceptor';
-import { RouterModule, Routes } from '@angular/router';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { AuthenticationService } from './Services/Authentication.service';
 import { LoginPageComponent } from './z_components/common/login-page/login-page.component';
-import { SpinnerComponent } from './z_components/common/spinner/spinner.component';
-import { CanActivateGuard } from './utilities/Guard/can-activate.guard';
-import { AgGridModule } from '@ag-grid-community/angular';
+import { LayoutModule } from './z_components/layout/layout.module';
 // import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
@@ -25,13 +19,14 @@ import { AgGridModule } from '@ag-grid-community/angular';
     FormsModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    LayoutModule,
     AgGridModule
     // NgbModule
   ],
   declarations: [
     AppComponent,
     LoginPageComponent,
-    SpinnerComponent,
+    // SpinnerComponent,
   ],
   providers: [
     // { provide: HTTP_INTERCEPTORS, useClass: SpinnerInterceptor, multi: true },

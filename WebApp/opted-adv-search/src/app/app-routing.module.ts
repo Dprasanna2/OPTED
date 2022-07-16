@@ -1,7 +1,36 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { LoginPageComponent } from './z_components/common/login-page/login-page.component';
+import { LayoutComponent } from './z_components/layout/layout.component';
 
-const routes: Routes = [];
+// const routes: Routes = [
+//   {
+//     path: '',
+//     loadChildren: () => import('./z_components/layout/layout.module').then(m => m.LayoutModule),
+//     pathMatch: 'full',
+//   },
+//   { path: '**', redirectTo: '' }
+// ];
+
+
+const routes: Routes = [
+  {
+    path: '',
+    component: LayoutComponent,
+    pathMatch: 'full',
+  },
+  {
+    path: 'home',
+    component: LayoutComponent,
+    pathMatch: 'full',
+  },
+  {
+    path: 'login',
+    component: LoginPageComponent
+  },
+  { path: '**', redirectTo: '' }
+];
+
 // const routes: Routes = [
 //   {
 //     path: '',
