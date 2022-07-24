@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginPageComponent } from './z_components/common/login-page/login-page.component';
+import { RegisterPageComponent } from './z_components/common/register-page/register-page.component';
 import { LayoutComponent } from './z_components/layout/layout.component';
 
 // const routes: Routes = [
@@ -27,6 +28,10 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginPageComponent
+  },
+  {
+    path: 'registration',
+    component: RegisterPageComponent
   },
   { path: '**', redirectTo: '' }
 ];
