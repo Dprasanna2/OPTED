@@ -1,0 +1,80 @@
+
+//Media for devices
+ @media(max-width:767px){
+   .btn-login,.btn-signup{width: 49%;}
+   .home{margin-right:0px;}
+ }
+ @media(min-width:768px){
+  .btn-login,.btn-signup{width: 120px;}
+  .home{margin-right:10px;}
+  
+ }
+
+
+ //CSS FOR NAVBAR...
+.bg-nav{
+  background-color:#dadce0;
+}
+.nav-shadow{
+  -webkit-box-shadow: 0px 9px 5px -1px rgba(0,0,0,0.42);
+  -moz-box-shadow: 0px 9px 5px -1px rgba(0,0,0,0.42);
+  box-shadow: 0px 9px 5px -1px rgba(0,0,0,0.42);
+}
+// .btn-login,.btn-signup{width: 120px;}
+.bg-btn{background-color: #fc7703;}
+.btn-login{margin-right: 5px;}
+
+
+//CSS FOR BACKGROUND
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+.bg{background: url() no-repeat; width: 100%; height: 100%;}
+
+
+
+//Css For Login page
+.form-container{border: 0px solid; padding: 60px 50px;
+  -webkit-box-shadow: 0px 0px 40px 5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 40px 5px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 40px 5px rgba(0,0,0,0.75);
+}
+.submit-btn{width: 100%;}
+.new_user{color: blue;}
+.login_text{font-size: 18px;}
+
+// linear-gradient(rgba(0,8,51,0.9),rgba(0,8,51,0.9)),
+//Css for search bar
+.search-bar{
+  min-height: 100vh;
+  padding: 5%;
+  background-color:#f7f8fa;
+  background-image: url('../images/site-background-1.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search{
+  width: 100%;
+  background: rgba(255,255,255,0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  padding: 0px 10px;
+  border: 1px solid black;
+}
+.search input{
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: 24px 20px;
+  font-size: 20px;
+  color: #fc7703;
+}
+.search button{
+  width: 20%;
+  background-color: #fc7703;
+  border: 0px;
+  padding: 10px;
+}

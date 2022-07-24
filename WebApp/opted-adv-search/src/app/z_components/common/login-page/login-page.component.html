@@ -1,4 +1,4 @@
-<h4 class="text-center">Login Page</h4>
+<!-- <h4 class="text-center">Login Page</h4>
 
 <div class="container">
 	<form [formGroup]="loginForm">
@@ -6,8 +6,8 @@
 			<label for="exampleInputEmail1">User Name</label>
       <input type="text" class="form-control" formControlName="userName" placeholder="Enter userName">
       <small class="form-text text-muted">
-        <!-- *ngIf= "loginForm.controls['userName']touched && loginForm.controls['userName']errors?['required']"> -->
-          Please enter valid user name.!
+         *ngIf= "loginForm.controls['userName']touched && loginForm.controls['userName']errors?['required']"> -->
+          <!-- Please enter valid user name.!
       </small>
     </div>
     
@@ -21,4 +21,34 @@
     </small>
     <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid" (click)= "login()">Submit</button>
   </form>
-</div>
+</div> -->
+
+<html>
+<body>
+  <div class="container-fluid bg">
+    <div class="row justify-content-center">
+     <div class="col-lg-6 col-md-8 col-sm-12">
+      <form class="form-container">
+        <p class="text-center text-dark text-wrap login_text">LOGIN FORM</p>
+        <div class="form-group mb-3">
+          <label class="mb-2">Email Address</label>
+          <input type="email" class="form-control" placeholder="Enter Email Id">      
+        </div>
+        <div class="form-group mb-3">
+          <label class="mb-2">Password</label>
+          <input type="password" class="form-control" placeholder="Enter Password">      
+        </div>
+        <button type ="submit" class="btn btn-success submit-btn">Submit</button>
+        <p class="new_user"><a href="#" routerLink="/registration">New User? Register here</a></p>
+      </form>
+  </div>
+  
+    </div>
+  
+   </div>
+</body>
+</html>
+
+
+
+  
