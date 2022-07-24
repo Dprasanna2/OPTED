@@ -7,11 +7,21 @@ import { NgxCsvParserModule } from 'ngx-csv-parser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginPageComponent } from './z_components/common/login-page/login-page.component';
-import { LayoutModule } from './z_components/layout/layout.module';
+import { SpinnerComponent } from './z_components/common/spinner/spinner.component';
+import { UploadFileComponent } from './z_components/common/upload-file/upload-file.component';
+import { MainPageComponent } from './z_components/layout/main-page/main-page.component';
+import { SearchBarComponent } from './z_components/layout/main-page/search-bar/search-bar.component';
+import { SearchResultComponent } from './z_components/layout/main-page/search-result/search-result.component';
+import { NavMenuComponent } from './z_components/layout/nav-menu/nav-menu.component';
 // import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AgGridModule } from 'ag-grid-angular';
+import { CommonModule } from '@angular/common';
+import { RouterModule, Routes } from '@angular/router';
+import { RegisterPageComponent } from './z_components/common/register-page/register-page.component';
 
 @NgModule({
   imports: [
+    CommonModule,
     BrowserModule,
     // RouterModule.forRoot(routes),
     AppRoutingModule,
@@ -19,15 +29,23 @@ import { LayoutModule } from './z_components/layout/layout.module';
     FormsModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    LayoutModule,
-    // AgGridModule,
+    // LayoutModule,
+    AgGridModule,
     NgxCsvParserModule
     // NgbModule
   ],
   declarations: [
+    // LayoutComponent,
     AppComponent,
+    MainPageComponent,
+    SearchBarComponent,
+    SearchResultComponent,
+    NavMenuComponent,
+    UploadFileComponent,
     LoginPageComponent,
-    // SpinnerComponent,
+    RegisterPageComponent,
+    // LoginPageComponent,
+    SpinnerComponent
   ],
   providers: [
     // { provide: HTTP_INTERCEPTORS, useClass: SpinnerInterceptor, multi: true },
@@ -40,22 +58,3 @@ import { LayoutModule } from './z_components/layout/layout.module';
 })
 export class AppModule { }
 
-// import { NgModule } from '@angular/core';
-// import { BrowserModule } from '@angular/platform-browser';
-// import { AgGridModule } from '@ag-grid-community/angular';
-// import { AppRoutingModule } from './app-routing.module';
-// import { AppComponent } from './app.component';
-
-// @NgModule({
-//   declarations: [
-//     AppComponent
-//   ],
-//   imports: [
-//     BrowserModule,
-//     AppRoutingModule,
-//     AgGridModule
-//   ],
-//   providers: [],
-//   bootstrap: [AppComponent]
-// })
-// export class AppModule { }
