@@ -1,9 +1,9 @@
-import { AgGridModule } from '@ag-grid-community/angular';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgxCsvParserModule } from 'ngx-csv-parser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginPageComponent } from './z_components/common/login-page/login-page.component';
@@ -20,7 +20,8 @@ import { LayoutModule } from './z_components/layout/layout.module';
     BrowserAnimationsModule,
     HttpClientModule,
     LayoutModule,
-    AgGridModule
+    // AgGridModule,
+    NgxCsvParserModule
     // NgbModule
   ],
   declarations: [

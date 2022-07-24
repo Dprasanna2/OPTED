@@ -1,4 +1,3 @@
-import { ClientSideRowModelModule } from '@ag-grid-community/client-side-row-model';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,11 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchResultComponent implements OnInit {
 
-  modules = [ClientSideRowModelModule];
+  // modules = [ClientSideRowModelModule];
   columnDefs = [
-        {headerName: 'Make', field: 'make'},
-        {headerName: 'Model', field: 'model'},
-        {headerName: 'Price', field: 'price'}
+        {headerName: 'Make', field: 'make', width: 150, resizable: true },
+        {headerName: 'Model', field: 'model', width: 150, resizable: true },
+        {headerName: 'Price', field: 'price', width: 150, resizable: true }
     ];
 
     rowData = [
@@ -23,6 +22,8 @@ export class SearchResultComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }
+ 
