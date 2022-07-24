@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ClientSideRowModelModule } from "@ag-grid-community/client-side-row-model";
+// import { ClientSideRowModelModule } from "@ag-grid-community/client-side-row-model";
 import { Module } from 'ag-grid-community';
 
 @Component({
