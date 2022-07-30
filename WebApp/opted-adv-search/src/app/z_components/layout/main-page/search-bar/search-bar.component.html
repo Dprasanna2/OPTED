@@ -1,6 +1,29 @@
-<div class="container-fluid mx-0 search-bar">
+ <div class="container-fluid mx-0 search-bar">
 <form action="" class="search">
 <input type="text" placeholder="Search here..." name="a">
 <button type="submit" class="rounded-pill text-white">Search</button>
 </form>
 </div>
+
+<!-- 
+  <div class="container">
+    <div class="row padding-200px">
+        <div class="col-sm-3">
+            <select class="dropdown">
+                <option *ngFor="let country of countryList">{{country}}</option>
+            </select>
+        </div>
+    </div>
+  </div> -->
+
+
+<form [formGroup]="form">
+   <mat-form-field>
+    <mat-label>Select Country</mat-label>
+    <mat-select formControlName ="countryNames" multiple>
+      <mat-option *ngFor="let countryNames of countryList" [value]="countryNames">{{countryNames}}
+
+      </mat-option>
+    </mat-select>
+  </mat-form-field> 
+</form>

@@ -10,6 +10,9 @@
   
  }
 
+ body{
+  background-image: url('../images/site-background-1.jpg');
+ }
 
  //CSS FOR NAVBAR...
 .bg-nav{
@@ -44,10 +47,7 @@
 // linear-gradient(rgba(0,8,51,0.9),rgba(0,8,51,0.9)),
 //Css for search bar
 .search-bar{
-  min-height: 100vh;
   padding: 5%;
-  background-color:#f7f8fa;
-  background-image: url('../images/site-background-1.jpg');
   background-position: center;
   background-size: cover;
   display: flex;
@@ -68,13 +68,12 @@
   flex: 1;
   border: 0;
   outline: none;
-  padding: 24px 20px;
-  font-size: 20px;
+  padding: 10px;
+  font-size: 14px;
   color: #fc7703;
 }
 .search button{
-  width: 20%;
   background-color: #fc7703;
   border: 0px;
-  padding: 10px;
+  padding: 4px 20px;
 }
