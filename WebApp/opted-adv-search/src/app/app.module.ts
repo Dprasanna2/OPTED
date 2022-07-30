@@ -18,6 +18,7 @@ import { AgGridModule } from 'ag-grid-angular';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { RegisterPageComponent } from './z_components/common/register-page/register-page.component';
+import {MatSelectModule} from '@angular/material/select';
 
 @NgModule({
   imports: [
@@ -31,7 +32,8 @@ import { RegisterPageComponent } from './z_components/common/register-page/regis
     HttpClientModule,
     // LayoutModule,
     AgGridModule,
-    NgxCsvParserModule
+    NgxCsvParserModule,
+    MatSelectModule
     // NgbModule
   ],
   declarations: [
